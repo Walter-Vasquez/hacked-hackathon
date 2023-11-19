@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import { IngredientsList } from "./components";
+import { IngredientsList, RecipesList } from "./components";
 
 function App() {
   const ingredients = [{ dummy: "value" }];
@@ -10,7 +10,12 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={<IngredientsList ingredients={ingredients} />}
+          element={
+            <>
+              <IngredientsList ingredients={ingredients} />
+              <RecipesList recipes={recipes} />
+            </>
+          }
         ></Route>
       </Routes>
     </Router>
