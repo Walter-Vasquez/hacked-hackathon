@@ -5,7 +5,7 @@ const ingredientsPickedSlice = createSlice({
   initialState: [],
   reducers: {
     addIngredient(state, action) {
-      return [...state, action.payoad];
+      return [...state, action.payload];
     },
   },
 });

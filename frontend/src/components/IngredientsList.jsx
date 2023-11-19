@@ -1,7 +1,10 @@
 /* eslint-disable react/prop-types */
+import { useSelector } from "react-redux";
 import Ingredient from "./Ingredient";
 
-const IngredientsList = ({ ingredients }) => {
+const IngredientsList = () => {
+  const ingredients = useSelector((state) => state.ingredientsPicked);
+
   return (
     <div id="ingredients-list">
       <h2>List of Ingredients</h2>
