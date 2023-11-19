@@ -4,7 +4,7 @@ import Ingredient from "./Ingredient";
 
 const IngredientsList = () => {
   const ingredients = useSelector((state) => state.ingredientsPicked);
-
+  const selectIngredient = (newIngredient) => {};
   return (
     <div id="ingredients-list">
       <h2>List of Ingredients</h2>

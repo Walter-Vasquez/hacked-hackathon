@@ -10,4 +10,6 @@ const ingredientsPickedSlice = createSlice({
   },
 });
 
+export const { addIngredient } = ingredientsPickedSlice.actions;
+
 export default ingredientsPickedSlice.reducer;
