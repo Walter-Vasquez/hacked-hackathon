@@ -1,17 +1,12 @@
 const express = require("express");
 const cors = require("cors");
 const { PORT } = require("./utilities/config");
+const recipeRouter = require("./controllers/recipes");
 
 const app = express();
 app.use(cors());
-
-/* 
-domain: "recipefairy.com", id: "53acb03d6218851f2fc16574c4dfad79",…}
-cluster
-: 
-[]
-*/
+app.use("/api/recipes", recipeRouter);
 
 app.listen(PORT, () => {
-  console.log("Server is on port ", PORT);
+  console.log("Server is running on port ", PORT);
 });
