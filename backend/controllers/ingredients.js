@@ -1,9 +1,9 @@
 //https://api.spoonacular.com/food/ingredients/search?query=banana
 const express = require("express");
-const recipeRouter = express.Router();
+const ingredientsRouter = express.Router();
 const { API_KEY, API_PATH } = require("../utilities/config");
 
-recipeRouter.get("/", async (request, response, next) => {
+ingredientsRouter.get("/", async (request, response, next) => {
   try {
     let { ingredient } = request.query;
 
@@ -17,4 +17,4 @@ recipeRouter.get("/", async (request, response, next) => {
   }
 });
 
-module.exports = recipeRouter;
+module.exports = ingredientsRouter;
