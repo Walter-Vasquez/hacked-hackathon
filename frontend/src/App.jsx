@@ -3,7 +3,7 @@ import "./App.css";
 import { IngredientsList } from "./components";
 
 function App() {
-  const ingredients = [{ greeting: "hi" }];
+  const ingredients = [{ dummy: "value" }];
   return (
     <Router>
       <h1>Now We're Cookin'</h1>
